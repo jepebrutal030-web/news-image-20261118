@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { width: 1024px; height: 1024px; overflow: hidden; background: #f4f1ea; font-family: 'DejaVu Sans', Arial, sans-serif; color: #111; }
+  .page { width: 1024px; height: 1024px; padding: 20px 26px 16px; display: flex; flex-direction: column; }
+  /* ---------- masthead ---------- */
+  header { background: #0b1f3a; color: #fff; border-radius: 10px; padding: 14px 26px 12px; }
+  .kicker { font-size: 16px; letter-spacing: 5px; color: #f2b705; font-weight: bold; }
+  h1 { font-family: 'DejaVu Serif', Georgia, serif; font-size: 54px; line-height: 1.02; letter-spacing: 1px; margin-top: 3px; }
+  .dateline { display: flex; justify-content: space-between; margin-top: 8px; padding-top: 8px; border-top: 1px solid rgba(255,255,255,.35); font-size: 18px; }
+  .dateline b { color: #f2b705; }
+  /* ---------- grid ---------- */
+  .grid { flex: 1; display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: 1fr 1fr 1fr; gap: 12px; margin-top: 12px; min-height: 0; }
+  .card { background: #fff; border-radius: 10px; padding: 13px 17px 10px; border-top: 7px solid #999; box-shadow: 0 2px 6px rgba(0,0,0,.10); display: flex; flex-direction: column; overflow: hidden; }
+  .tag { font-size: 13px; font-weight: bold; letter-spacing: 2.5px; }
+  .card h2 { font-family: 'DejaVu Serif', Georgia, serif; font-size: 24px; line-height: 1.13; margin-top: 6px; }
+  .card p { font-size: 16.5px; line-height: 1.35; margin-top: 7px; color: #333; }
+  .stat { margin-top: auto; padding-top: 6px; font-size: 15px; font-weight: bold; color: #0b1f3a; }
+  .c1 { border-top-color: #c0392b; } .c1 .tag { color: #c0392b; }
+  .c2 { border-top-color: #1f618d; } .c2 .tag { color: #1f618d; }
+  .c3 { border-top-color: #7d3c98; } .c3 .tag { color: #7d3c98; }
+  .c4 { border-top-color: #148f77; } .c4 .tag { color: #148f77; }
+  .c5 { border-top-color: #d35400; } .c5 .tag { color: #d35400; }
+  .c6 { border-top-color: #5d6d7e; } .c6 .tag { color: #5d6d7e; }
+  /* ---------- footer ---------- */
+  footer { margin-top: 12px; background: #0b1f3a; color: #fff; border-radius: 10px; padding: 11px 20px 10px; }
+  footer .inbrief { font-size: 15.5px; line-height: 1.42; }
+  footer .inbrief b { color: #f2b705; letter-spacing: 2px; }
+  footer .src { margin-top: 6px; font-size: 12.5px; color: #b9c4d4; }
+</style>
+</head>
+<body>
+<div class="page">
+  <header>
+    <div class="kicker">THE WORLD TODAY</div>
+    <h1>WORLD NEWS</h1>
+    <div class="dateline"><span><b>WEDNESDAY, 18 NOVEMBER 2026</b></span><span>The day in six stories</span></div>
+  </header>
+
+  <div class="grid">
+    <div class="card c1">
+      <div class="tag">GULF CRISIS</div>
+      <h2>U.S. strikes Iran's Qeshm Island as Tehran hits Bahrain &amp; Kuwait</h2>
+      <p>U.S. jets hit a Revolutionary Guard missile site on Qeshm. Iran fired drones at U.S. radar sites in Bahrain &mdash; its third attack in a week &mdash; and hit Patriots in Kuwait.</p>
+      <div class="stat">3rd drone attack on Bahrain in a week</div>
+    </div>
+    <div class="card c2">
+      <div class="tag">UKRAINE</div>
+      <h2>Kerch Bridge partly collapses under Ukrainian attack</h2>
+      <p>Drones and missiles struck the bridge to annexed Crimea for a second day. One of its two arches fell into the strait below.</p>
+      <div class="stat">2nd day of strikes on the bridge</div>
+    </div>
+    <div class="card c3">
+      <div class="tag">SUMMIT</div>
+      <h2>Trump, Xi and Putin to meet in Shenzhen</h2>
+      <p>The first-ever trilateral summit of the three leaders is set for Thursday at APEC. Xi hosted Putin; Trump met Quad partners in Manila.</p>
+      <div class="stat">APEC summit opens in Shenzhen</div>
+    </div>
+    <div class="card c4">
+      <div class="tag">HEALTH</div>
+      <h2>Ebola outbreak in DR Congo more than doubles</h2>
+      <p>Over 11,000 cases and 5,400 deaths in three months, the UN says. Three in four infected children under five do not survive.</p>
+      <div class="stat">11,000 cases &middot; 5,400 deaths</div>
+    </div>
+    <div class="card c5">
+      <div class="tag">UNITED STATES</div>
+      <h2>America loses measles-free status after 26 years</h2>
+      <p>A record outbreak: more than 5,400 cases and 10 deaths &mdash; the first measles deaths in the U.S. since the early 1990s.</p>
+      <div class="stat">5,400+ cases &middot; 10 deaths</div>
+    </div>
+    <div class="card c6">
+      <div class="tag">DISASTER</div>
+      <h2>Russian military plane crashes in Siberia: 19 dead</h2>
+      <p>The aircraft went down in the Kemerovo region. A 6.0-magnitude earthquake also struck Papua New Guinea the same day.</p>
+      <div class="stat">19 killed in the crash</div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="inbrief"><b>IN BRIEF &nbsp;</b> Democrats win Alaska Senate seat, take 56 seats &nbsp;&bull;&nbsp; Category 5 Cyclone Xavier hits the Cook Islands &nbsp;&bull;&nbsp; Gaza: cold kills in displaced people's tents &nbsp;&bull;&nbsp; U.S. flights delayed after a nationwide FAA ground stop</div>
+    <div class="src">Sources: Reuters, AP, BBC, Al Jazeera, CBS News, The Japan Times, United Nations &mdash; reported 18 November 2026</div>
+  </footer>
+</div>
+</body>
+</html>
